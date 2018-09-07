@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, serif;
+  /* background-color: white; */
+  color: darkblue;
+}
+
+body, h1 {
+  margin: 20px;
+  background-color: skyblue;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: 342px 342px;
+  grid-template-rows: auto;
+}
+
+.label, .input, .button {
+  width: 300px;
+  height: 30px;
+  border: 1px solid black ;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+}
+
+.list-item {
+  width: 300px;
+  height: 50px;
+  border: 1px solid black ;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 342px 342px;
+  grid-template-rows: auto;
+}
+
+#list {
+  display: grid;
+  grid-template-columns: 342px 342px;
+  grid-template-rows: auto;
+}
+
+input, select, button {
+  width: 280px;
+  height: 25px;
+}
+
+.radio {
+  width: 40px;
+}

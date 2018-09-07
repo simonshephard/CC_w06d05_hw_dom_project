@@ -6,13 +6,18 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/app.js"></script>
   </head>
+
   <body>
 
+    <h1>Add new item to list</h1>
 
     <form id="form">
 
-      <div class="form-item">
-        <label for="type">Type</label>
+      <div class="label">
+        <label for="type">Enter type:</label>
+      </div>
+
+      <div class="input">
         <select id="type">
           <option value="" disabled selected></option>
           <option value="Type1">Type1</option>
@@ -21,24 +26,77 @@
         </select>
       </div>
 
-      <div class="form-item">
-        <label for="name">Name</label>
-        <input type="text" id="name" required/>
+      <div class="label">
+        <label for="name">Enter name:</label>
       </div>
 
-      <div class="form-item">
-        <label for="description">Description</label>
-        <input type="text" id="description" required/>
+      <div class="input">
+        <input type="text" id="name"/>
       </div>
 
-      <input type="submit" value="Add to list"/>
+      <div class="label">
+        <label for="description">Enter description:</label>
+      </div>
+
+      <div class="input">
+        <input type="text" id="description"/>
+      </div>
+
+      <div class="label">
+        <label for="description">Enter range:</label>
+      </div>
+
+      <div class="input">
+        <input type="range" id="range"/>
+      </div>
+
+      <div class="label">
+        <label for="file">Select file:</label>
+      </div>
+
+      <div class="input">
+        <input type="file" id="file"/>
+      </div>
+
+      <div class="label">
+        <div>Choose radio:</div>
+      </div>
+
+      <div class="input">
+        <label for="radio1" class="radio">Radio1</label>
+        <input type="radio" class="radio" id="radio1" name="radio" value="Radio1" checked>
+        <label for="radio2" class="radio">Radio2</label>
+        <input type="radio" class="radio" id="radio2" name="radio" value="Radio2">
+        <label for="radio3" class="radio">Radio3</label>
+        <input type="radio" class="radio" id="radio3" name="radio" value="Radio3">
+      </div>
+
+      <div class="label">
+        <label for="submit">Add to list:</label>
+      </div>
+
+      <div class="input">
+        <input type="submit" value="Add"/>
+      </div>
 
     </form>
 
-    <button id="delete-all">Delete list</button>
+    <h1>Delete list</h1>
 
-    <h1>List</h1>
-    <div id="list"></div>
+    <div id="buttons">
+      <div class="label">
+        Delete all list items:
+      </div>
+      <div class="button">
+        <button id="delete">Delete list</button>
+      </div>
+    </div>
+
+
+    <h1>List of items</h1>
+
+    <div id="list">
+    </div>
 
 
   </body>
