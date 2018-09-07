@@ -57,3 +57,7 @@ input, select, button {
 .radio {
   width: 40px;
 }
+
+ul {
+  list-style: none;
+}
